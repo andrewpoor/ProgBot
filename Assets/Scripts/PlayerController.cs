@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -20,38 +19,6 @@ public class PlayerController : MonoBehaviour {
         rigidBody = GetComponent<Rigidbody>();
         SetScoreText();
         winMessageText.text = "";
-
-        var assembly = RuntimeCompiler.Compile(@"
-		        using UnityEngine;
-
-		        public class Test
-		        {
-		        	public static void Foo()
-		        	{
-			        	Debug.Log(""Helloooooo, World!"");
-			        }
-		        }
-        ");
-
-        var method = assembly.GetType("Test").GetMethod("Foo");
-        var del = (Action) Delegate.CreateDelegate(typeof(Action), method);
-        del.Invoke();
-
-        var assemblyT = RuntimeCompiler.Compile(@"
-		        using UnityEngine;
-
-		        public class Test
-		        {
-		        	public static void Foo()
-		        	{
-			        	Debug.Log(""Seems to work now."");
-			        }
-		        }
-        ");
-
-        var methodT = assemblyT.GetType("Test").GetMethod("Foo");
-        var delT = (Action)Delegate.CreateDelegate(typeof(Action), methodT);
-        delT.Invoke();
     }
 
 	//void FixedUpdate()
