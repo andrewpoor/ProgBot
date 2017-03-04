@@ -15,35 +15,40 @@ public class GroundController : MonoBehaviour {
 
     void Start ()
     {
-        scriptPath = Application.dataPath + "/userScripts/groundMovement.txt";
-        string script = Load(scriptPath);
-        if ( script == null )
+        string script = @"
+using UnityEngine;
+
+public class GroundController
+{
+    public static float angularSpeed = 50.0f;
+
+    public static bool Move(MonoBehaviour mb)
+    {
+        float rotateX =  Input.GetAxis(""Vertical"");
+        float rotateZ = -Input.GetAxis(""Horizontal"");
+
+        Vector3 rotation = new Vector3(rotateX, 0.0f, rotateZ) * angularSpeed;
+
+        mb.transform.Rotate(rotation * Time.deltaTime);
+
+        return true;
+    }
+}
+        ";
+
+        scriptPath = Application.dataPath + "/groundMovement.txt";
+
+        var scriptFile = File.CreateText(scriptPath);
+        scriptFile.Write(script);
+        scriptFile.Close();
+
+        script = Load(scriptPath);
+        if (script == null)
         {
             throw new FileLoadException();
         }
-        
+
         movementAssembly = RuntimeCompiler.Compile(script);
-
-        //movementAssembly = RuntimeCompiler.Compile(@"
-        //    using unityengine;
-
-        //      public class groundcontroller
-        //{
-        //    public static float angularspeed = 50.0f;
-
-        //    public static bool move(monobehaviour mb)
-        //    {
-        //        float rotatex = input.getaxis(""vertical"");
-        //        float rotatez = -input.getaxis(""horizontal"");
-
-        //        vector3 rotation = new vector3(rotatex, 0.0f, rotatez) * angularspeed;
-
-        //        mb.transform.rotate(rotation * time.deltatime);
-
-        //        return true;
-        //    }
-        //}
-        //");
     }
 
     // Update is called once per frame

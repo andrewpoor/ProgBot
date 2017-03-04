@@ -5,7 +5,7 @@ Direct3D:
     Renderer: NVIDIA GeForce GTX 1070 (ID=0x1b81)
     Vendor:   NVIDIA
     VRAM:     3072 MB
-    Driver:   21.21.13.7849
+    Driver:   21.21.13.7866
 Begin MonoManager ReloadAssembly
 Platform assembly: C:\Users\Public\Documents\Unity Projects\Rolling Balls\Builds\Rolling Balls (Windows)_Data\Managed\UnityEngine.dll (this message is harmless)
 Loading C:\Users\Public\Documents\Unity Projects\Rolling Balls\Builds\Rolling Balls (Windows)_Data\Managed\UnityEngine.dll into Unity Child Domain
@@ -19,13 +19,46 @@ Platform assembly: C:\Users\Public\Documents\Unity Projects\Rolling Balls\Builds
 Loading C:\Users\Public\Documents\Unity Projects\Rolling Balls\Builds\Rolling Balls (Windows)_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
 Platform assembly: C:\Users\Public\Documents\Unity Projects\Rolling Balls\Builds\Rolling Balls (Windows)_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading C:\Users\Public\Documents\Unity Projects\Rolling Balls\Builds\Rolling Balls (Windows)_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.025 seconds
+Platform assembly: C:\Users\Public\Documents\Unity Projects\Rolling Balls\Builds\Rolling Balls (Windows)_Data\Managed\mcs.dll (this message is harmless)
+Loading C:\Users\Public\Documents\Unity Projects\Rolling Balls\Builds\Rolling Balls (Windows)_Data\Managed\mcs.dll into Unity Child Domain
+- Completed reload, in  0.063 seconds
 Platform assembly: C:\Users\Public\Documents\Unity Projects\Rolling Balls\Builds\Rolling Balls (Windows)_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Public\Documents\Unity Projects\Rolling Balls\Builds\Rolling Balls (Windows)_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.148148 ms
+UnloadTime: 1.042605 ms
+>>>>>>>>>>>>>>>> Start of Compile.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+>>>>>>>>>>>>>>>> After Initialise.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Platform assembly: C:\Users\Public\Documents\Unity Projects\Rolling Balls\Builds\Rolling Balls (Windows)_Data\Managed\System.Xml.dll (this message is harmless)
+Platform assembly: C:\Users\Public\Documents\Unity Projects\Rolling Balls\Builds\Rolling Balls (Windows)_Data\Managed\Mono.Security.dll (this message is harmless)
+Platform assembly: C:\Users\Public\Documents\Unity Projects\Rolling Balls\Builds\Rolling Balls (Windows)_Data\Managed\System.Configuration.dll (this message is harmless)
+>>>>>>>>>>>>>>>> After compiling assembly from source.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+>>>>>>>>>>>>>>>> Trying to log result errors.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+>>>>>>>>>>>>>>>> After logging result errors.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+End of Compile.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 25c -> priority: 1 
+  Thread -> id: 2814 -> priority: 1 

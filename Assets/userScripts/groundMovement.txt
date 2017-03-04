@@ -1,18 +1,20 @@
-using UnityEngine;
 
-public class GroundController
-{
-    public static float angularSpeed = 50.0f;
+            using UnityEngine;
 
-    public static bool Move(MonoBehaviour mb)
-    {
-        float rotateX = Input.GetAxis("Vertical");
-        float rotateZ = -Input.GetAxis("Horizontal");
+            public class GroundController
+            {
+                public static float angularSpeed = 50.0f;
 
-        Vector3 rotation = new Vector3(rotateX, 0.0f, rotateZ) * angularSpeed;
+                public static bool Move(MonoBehaviour mb)
+                {
+                    float rotateX =  Input.GetAxis("Vertical");
+                    float rotateZ = -Input.GetAxis("Horizontal");
 
-        mb.transform.Rotate(rotation * Time.deltaTime);
+                    Vector3 rotation = new Vector3(rotateX, 0.0f, rotateZ) * angularSpeed;
 
-        return true;
-    }
-}
+                    mb.transform.Rotate(rotation * Time.deltaTime);
+
+                    return true;
+                }
+            }
+        
